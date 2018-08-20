@@ -7,7 +7,6 @@ const dotenv = require('dotenv')
 
 var prefix = "m!"
 const marrData = JSON.parse(fs.readFileSync("marriageData.json", "utf8"));
-var token = process.env.botToken;
 
 var usersPlaying = [];
 var noMentionArray = [];
@@ -637,7 +636,7 @@ function removeRole(id, role) {
     id.removeRole(role).catch(console.error);
 }
 
-client.login(token);
+client.login(process.env.botToken);
 
 /*
 Yes
