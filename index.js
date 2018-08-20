@@ -3,10 +3,11 @@ var client = new discord.Client();
 const fs = require('fs')
 var request = require('request');
 const repeat = require('repeat');
+const dotenv = require('dotenv')
 
 var prefix = "m!"
 const marrData = JSON.parse(fs.readFileSync("marriageData.json", "utf8"));
-var token = process.env.token;
+var token = dotenv.parse(botToken);
 
 var usersPlaying = [];
 var noMentionArray = [];
@@ -647,5 +648,3 @@ How to commit and update real app:
 3. heroku local
 4. git push heroku master
 */
-
-//Big Ol Skillet
