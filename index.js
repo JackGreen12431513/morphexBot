@@ -3,7 +3,6 @@ var client = new discord.Client();
 const fs = require('fs')
 var request = require('request');
 const repeat = require('repeat');
-require('dotenv').config();
 
 var prefix = "m!"
 const marrData = JSON.parse(fs.readFileSync("marriageData.json", "utf8"));
