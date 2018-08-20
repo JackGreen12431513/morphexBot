@@ -7,7 +7,7 @@ const dotenv = require('dotenv')
 
 var prefix = "m!"
 const marrData = JSON.parse(fs.readFileSync("marriageData.json", "utf8"));
-var token = dotenv.parse(botToken);
+var token = process.env.botToken;
 
 var usersPlaying = [];
 var noMentionArray = [];
