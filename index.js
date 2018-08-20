@@ -3,10 +3,11 @@ var client = new discord.Client();
 const fs = require('fs')
 var request = require('request');
 const repeat = require('repeat');
-const dotenv = require('dotenv')
+require('discord.js').config();
 
 var prefix = "m!"
 const marrData = JSON.parse(fs.readFileSync("marriageData.json", "utf8"));
+console.log(process.env.botToken);
 
 var usersPlaying = [];
 var noMentionArray = [];
