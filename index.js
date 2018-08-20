@@ -633,6 +633,10 @@ function addRole(id, role) {
     id.addRole(role).catch(console.error);
 }
 
+function removeRole(id, role) {
+    id.removeRole(role).catch(console.error);
+}
+
 client.login(token);
 
 /*
@@ -644,3 +648,5 @@ How to commit and update real app:
 3. heroku local
 4. git push heroku master
 */
+
+//Big Ol Skillet
